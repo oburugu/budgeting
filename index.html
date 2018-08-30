@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Budget Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <h1><span id='currency'>KES</span> <span id="balance"></span> <i class='fa fa-plus'></i><i class="fas fa-sync"></i>
+    </h1>
+
+    <div id='selectTransactType'>
+
+    </div>
+
+
+    <!-- <input type="date" id="dot"> -->
+    <div id='textField'>
+      <input type="text" id="notes" placeholder="Add Category">
+      <input type="number" id="amountTD" placeholder="Add Amount  (KES)">
+
+      <select name="transactType" id="transactType">
+          <option value="withdraw">Spend Balance</option>
+        <option value="deposit">Top-Up Balance</option>
+       
+
+      </select>
+      <button>Enter</button>
+
+    </div>
+    <ul id="transactions">
+    </ul>
+
+
+
+
+  </div>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
